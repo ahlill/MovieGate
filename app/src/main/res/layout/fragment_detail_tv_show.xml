@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFilmActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_head_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView style="@style/img_poster_container">
+
+                <ImageView
+                    android:id="@+id/img_poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/image_content_description"
+                    android:src="@color/black" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_title"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_title_information_status"
+                    style="@style/title_information"
+                    android:text="@string/text_title_information_status" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/tv_information"
+                    android:text="@string/text_status" />
+
+                <TextView
+                    android:id="@+id/tv_title_information_genre"
+                    style="@style/title_information"
+                    android:text="@string/text_title_information_genre" />
+
+                <TextView
+                    android:id="@+id/tv_genre"
+                    style="@style/tv_information"
+                    android:text="@string/text_genre" />
+
+                <TextView
+                    android:id="@+id/tv_title_information_network"
+                    style="@style/title_information"
+                    android:text="@string/text_title_information_network" />
+
+                <ImageView
+                    android:id="@+id/img_network"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/text_title_information_network" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_information_overview"
+            style="@style/title_information"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:text="@string/text_title_information_overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout_head_information" />
+
+        <TextView
+            android:id="@+id/tv_overview"
+            style="@style/tv_information"
+            android:text="@string/text_overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_information_overview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MovieGate</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie">Movie</string>
+    <string name="serial_tv">Serial TV</string>
+    <string name="image_content_description">image</string>
+    <string name="actors">Actors</string>
+    <string name="sample">sample</string>
+    <string name="text_title">Ini Adalah Title</string>
+    <string name="text_title_information_release">Release</string>
+    <string name="text_release">22/12/2020</string>
+    <string name="text_title_information_genre">Genre</string>
+    <string name="text_genre">Action, Adventure, Fantasy</string>
+    <string name="text_title_information_budget">Budget</string>
+    <string name="text_budget">$200.000.000,00</string>
+    <string name="text_title_information_revenue">Revenue</string>
+    <string name="text_revenue">$708.962.323,00</string>
+    <string name="text_title_information_overview">Overview</string>
+    <string name="text_overview">overview film yang menceritakan alur singkat filmnya, kalau kita sebutnya sama seperti sinopsis lah</string>
+    <string name="text_title_information_status">Status</string>
+    <string name="text_status">Bersambung</string>
+    <string name="text_title_information_network">Network</string>
+</resources>
